@@ -17,11 +17,11 @@ function App() {
   
   const Layout = () => {
     return (
-      <div className="h-screen bg-[#2d3250] overflow-hidden ">
+      <div className="h-screen bg-gradient-to-tl from-[#000066] to-[#6699ff] overflow-hidden ">
       <Navbar />
       <div className="flex h-full  ">
         {/* bagian kiri */}
-        <div className="w-64  py-1 px-5 h-full border-r-2 border-solid border-gray-700 ">
+        <div className="w-64  py-1 px-5 h-full border-r-2 border-solid border-white ">
           <Menu />
         </div>
         {/* bagian kanan */}

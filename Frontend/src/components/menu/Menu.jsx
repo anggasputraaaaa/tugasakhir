@@ -8,9 +8,9 @@ const Menu = () => {
         <div className='flex flex-col '>
           {Data.map((item) =>(
             <Link key={item.id} to={item.url} className='group'>
-              <div className='flex gap-4 items-center border-b-2 border-b-gray-700 cursor-pointer px-4 py-10 group-hover:bg-[#676f9d] duration-500 '>
+              <div className='flex gap-4 items-center border-b-2 border-b-white cursor-pointer px-4 py-10 group-hover:bg-[#000066] duration-500 '>
                 {item.icon}
-                <span className='font-raleway font-medium text-[#f9b17a] group-hover:text-white '>{item.title}</span>
+                <span className='font-raleway font-medium text-white group-hover:text-white '>{item.title}</span>
               </div>
             </Link>
           ))}

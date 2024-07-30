@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 const Content =  ({ dataka, datake}) => {
   
   return (
-      <Card  className="w-full overflow-auto h-[45%] bg-transparent shadow-2xl shadow-[#424769]">
+      <Card  className="w-full overflow-auto h-[45%] bg-transparent shadow-2xl ">
         <table       
         className="w-full min-w-max table-auto text-left bg-transparent">
           <thead >
@@ -26,32 +26,32 @@ const Content =  ({ dataka, datake}) => {
           <tbody>
             {dataka.map((isi, index) => (
               <tr key={index} className="group">
-                {isi.tanggal && <td className="p-4 group-hover:bg-[#676f9d] duration-300">
+                {isi.tanggal && <td className="p-4 group-hover:bg-[#000066] duration-300">
                   <Typography variant="small" color="white" className="font-raleway font-bold">
                     {isi.tanggal}
                   </Typography>
                 </td>}
-                {isi.waktu && <td className="p-4 group-hover:bg-[#676f9d] duration-300">
+                {isi.waktu && <td className="p-4 group-hover:bg-[#000066] duration-300">
                   <Typography variant="small" color="white" className="font-raleway font-bold">
                     {isi.waktu}
                   </Typography>
                 </td>}
-                {isi.suhu && <td className="p-4 group-hover:bg-[#676f9d] duration-300">
+                {isi.suhu && <td className="p-4 group-hover:bg-[#000066] duration-300">
                   <Typography variant="small" color="white" className="font-raleway font-bold">
                     {isi.suhu}{'\u00B0'}
                   </Typography>
                 </td>}
-                {isi.kelembaban && <td className="p-4 group-hover:bg-[#676f9d] duration-300">
+                {isi.kelembaban && <td className="p-4 group-hover:bg-[#000066] duration-300">
                   <Typography variant="small" color="white" className="font-raleway font-bold">
                     {isi.kelembaban+"%"}
                   </Typography>
                 </td>}
-                {isi.air && <td className="p-4 group-hover:bg-[#676f9d] duration-300">
+                {isi.air && <td className="p-4 group-hover:bg-[#000066] duration-300">
                   <Typography variant="small" color="white" className="font-raleway font-bold">
                     {isi.air} cm
                   </Typography>
                 </td>}
-                {isi.hujan && <td className="p-4 group-hover:bg-[#676f9d] duration-300">
+                {isi.hujan && <td className="p-4 group-hover:bg-[#000066] duration-300">
                   <Typography variant="small" color="white" className="font-raleway font-bold">
                     {isi.hujan} mm
                   </Typography>

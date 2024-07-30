@@ -43,42 +43,42 @@ const Card = () => {
     return (
         <div className='flex gap-9 p-5 items-center'>
             <div className='flex gap-5 flex-col  '>
-                <div className='flex flex-col w-96 h-32 bg-[#424769] shadow-md shadow-[#424769] rounded-2xl'>
+                <div className='flex flex-col w-96 h-32 bg-gradient-to-tl from-[#00e5ff] to-[#1200ff] shadow-md  rounded-2xl'>
                     <div className='flex justify-between p-4'>
                         <span className='font-bold font-raleway text-white '>Suhu</span>
                         <CiTempHigh className='text-2xl text-white ' />
                     </div>
                     <div className='flex items-center justify-center py-2'>
-                        <span className='text-5xl font-bold font-raleway text-[#f9b17a]'>{suhu}°</span> 
+                        <span className='text-5xl font-bold font-raleway text-white'>{suhu}°</span> 
                     </div>
                 </div>
-                <div className='flex flex-col w-96 h-32 bg-[#424769] shadow-md shadow-[#424769] rounded-2xl'>
+                <div className='flex flex-col w-96 h-32 bg-gradient-to-tl from-[#00e5ff] to-[#1200ff] shadow-md  rounded-2xl'>
                     <div className='flex justify-between p-4'>
                         <span className='font-bold font-raleway text-white '>Curah Hujan</span>
                         <IoMdRainy className='text-2xl text-white '/>
                     </div>
                     <div className='flex items-center justify-center py-2'>
-                        <span className='text-5xl font-bold font-raleway text-[#f9b17a]'>{hujan} mm</span> 
+                        <span className='text-5xl font-bold font-raleway text-white'>{hujan} mm</span> 
                     </div>
                 </div>
             </div>
             <div className='flex gap-5 flex-col s'>
-                <div className='flex flex-col w-96 h-32 bg-[#424769] shadow-md shadow-[#424769] rounded-2xl'>
+                <div className='flex flex-col w-96 h-32 bg-gradient-to-tl from-[#00e5ff] to-[#1200ff] shadow-md  rounded-2xl'>
                     <div className='flex justify-between p-4'>
                         <span className='font-bold font-raleway text-white '>Kelembaban</span>
                         <WiHumidity className='text-2xl text-white ' />
                     </div>
                     <div className='flex items-center justify-center py-2'>
-                        <span className='text-5xl font-bold font-raleway text-[#f9b17a]'>{kelembaban} %</span> 
+                        <span className='text-5xl font-bold font-raleway text-white'>{kelembaban} %</span> 
                     </div>
                 </div>
-                <div className='flex flex-col w-96 h-32 bg-[#424769] shadow-md shadow-[#424769] rounded-2xl'>
+                <div className='flex flex-col w-96 h-32 bg-gradient-to-tl from-[#00e5ff] to-[#1200ff] shadow-md  rounded-2xl'>
                     <div className='flex justify-between p-4'>
                         <span className='font-bold font-raleway text-white '>Permukaan Air</span>
                         <FaWater className='text-2xl text-white ' />
                     </div>
                     <div className='flex items-center justify-center py-2'>
-                        <span className='text-5xl font-bold font-raleway text-[#f9b17a]'>{air} cm</span> 
+                        <span className='text-5xl font-bold font-raleway text-white'>{air} cm</span> 
                     </div>
                 </div>
             </div>

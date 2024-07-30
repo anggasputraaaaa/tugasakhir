@@ -9,31 +9,31 @@ const Data = [
     {
         id : 1,
         title :"Main",
-        icon : <RiDashboard2Line className="text-[#f9b17a] size-8"/>,
+        icon : <RiDashboard2Line className="text-white size-8"/>,
         url : "/"
     },
     {
         id : 2,
         title :"Suhu",
-        icon : <CiTempHigh className="text-[#f9b17a] size-8"/>,
+        icon : <CiTempHigh className="text-white size-8"/>,
         url : "/suhu"
     },
     {
         id : 3,
         title :"Kelembaban",
-        icon : <WiHumidity className="text-[#f9b17a] size-8"/>,
+        icon : <WiHumidity className="text-white size-8"/>,
         url : "/kelembaban"
     },
     {
         id : 4,
         title :"Permukaan Air",
-        icon : <FaWater className="text-[#f9b17a] size-8"/>,
+        icon : <FaWater className="text-white size-8"/>,
         url :"/ketinggian"
     },
     {
         id : 5,
         title :"Curah Hujan",
-        icon : <IoMdRainy className="text-[#f9b17a] size-8"/>,
+        icon : <IoMdRainy className="text-white size-8"/>,
         url :"/hujan"
     }
 ]
