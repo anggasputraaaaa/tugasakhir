@@ -7,8 +7,15 @@ router.post('/data', async (req, res) => {
   const { distance, temperature, humidity, rainfall } = req.body;
 
   const now = new Date();
-  const date = now.toLocaleDateString('en-GB');// Format YYYY-MM-DD
-  const time = now.toTimeString().split(' ')[0]; // Format HH:MM:SS
+// Menambahkan 8 jam ke waktu UTC
+const utcOffset = now.getTime() + (now.getTimezoneOffset() * 60000);
+const witaTime = new Date(utcOffset + (8 * 3600000));
+
+// Mendapatkan tanggal dalam format DD/MM/YYYY
+const date = witaTime.toLocaleDateString('en-GB');
+
+// Mendapatkan waktu dalam format HH:MM:SS
+const time = witaTime.toTimeString().split(' ')[0];
 
   try {
     const newSensorData = new SensorData({
