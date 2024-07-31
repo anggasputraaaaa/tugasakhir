@@ -13,4 +13,4 @@ const SensorDataSchema = new mongoose.Schema({
   time: { type: String, required: true }
 });
 
-module.exports = mongoose.model('SensorData', SensorDataSchema);
+module.exports = mongoose.model('SensorDataf', SensorDataSchema);
