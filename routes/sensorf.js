@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const SensorData = require('../models/sensordataf');
+const SensorDataf = require('../models/sensordataf');
 
 // Endpoint POST untuk menyimpan data sensor
 router.post('/data', async (req, res) => {
@@ -18,7 +18,7 @@ const date = witaTime.toLocaleDateString('en-GB');
 const time = witaTime.toTimeString().split(' ')[0];
 
   try {
-    const newSensorData = new SensorData({
+    const newSensorData = new SensorDataf({
       ultra,
       temperature,
       pressure,
@@ -41,7 +41,7 @@ const time = witaTime.toTimeString().split(' ')[0];
 // Endpoint GET untuk mengambil data sensor
 router.get('/data', async (req, res) => {
   try {
-    const data = await SensorData.find({});
+    const data = await SensorDataf.find({});
     res.json(data);
   } catch (error) {
     res.status(500).send('Error retrieving data: ' + error.message);
